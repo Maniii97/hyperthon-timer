@@ -63,6 +63,7 @@ const COMMENTS = [
   "Is it a hackathon or a 'stare-at-the-screen-athon'? 🖥️",
 ];
 
+
 function App() {
   const [timeLeft, setTimeLeft] = useState(INITIAL_TIME);
   const [isRunning, setIsRunning] = useState(false);
