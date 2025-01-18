@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0a0a0a;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* Swirl animation */
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.swirl {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 30%, rgba(255, 0, 128, 0.1) 70%);
+  mix-blend-mode: screen;
+  animation: swirl 15s infinite linear;
+  pointer-events: none;
+}
+
+.swirl:nth-child(2) {
+  animation-duration: 17s;
+  animation-direction: reverse;
+  background: radial-gradient(circle at center, transparent 30%, rgba(128, 0, 255, 0.1) 70%);
+}
+
+.swirl:nth-child(3) {
+  animation-duration: 13s;
+  background: radial-gradient(circle at center, transparent 30%, rgba(255, 128, 0, 0.1) 70%);
+}
+
+/* Neon text effect */
+.neon-text {
+  text-shadow: 
+    0 0 5px rgba(255, 0, 128, 0.8),
+    0 0 10px rgba(255, 0, 128, 0.5),
+    0 0 15px rgba(255, 0, 128, 0.3);
+}
+
+.cyber-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 128, 1) 0%,
+    rgba(255, 0, 255, 1) 50%,
+    rgba(128, 0, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
