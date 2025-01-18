@@ -128,12 +128,12 @@ function App() {
 
         <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-8">
           <img
-            src="kiit logo.png"
+            src="src/public/images/kiit logo.png"
             alt="Sponsor 1"
             className="w-20"
           />
           <img
-            src="gfg new logo 4.png"
+            src="src/public/images/gfg new logo 4.png"
             alt="Sponsor 2"
             className="w-32"
           />
@@ -193,7 +193,7 @@ function App() {
 
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex justify-center items-center px-8 py-4 mb-10">
           <img
-            src="grouped.png"
+            src="src/public/images/grouped.png"
             alt="Sponsor 1"
             className="w-64 h-auto"
           />
